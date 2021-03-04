@@ -1,10 +1,6 @@
-<ul *ngFor = "let item of items">
-  <li>{{ item }}</li>
-</ul>
-
 <input type="text" #todo>
 <button (click)="addTodo(todo.value)">追加</button>
 
-<ul *nfFor = "lset item of items">
+<ul *ngFor = "let item of items">
   <li>{{item}} <button (click)="removeTodo(item)">削除</button></li>
 </ul>
